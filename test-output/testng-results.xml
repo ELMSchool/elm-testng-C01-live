@@ -1,23 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="5" total="6" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-07T21:18:08 EST" name="ExampleSuite" finished-at="2023-03-07T21:18:08 EST" duration-ms="38">
+  <suite started-at="2023-03-11T13:49:44 EST" name="OrangeHRM Suite" finished-at="2023-03-11T13:50:00 EST" duration-ms="15980">
     <groups>
-      <group name="reg">
-        <method signature="ExampleTest1.testA()[pri:0, instance:testng_demo.ExampleTest1@359f7cdf]" name="testA" class="testng_demo.ExampleTest1"/>
-      </group> <!-- reg -->
-      <group name="smoke">
-        <method signature="ExampleTest1.testA()[pri:0, instance:testng_demo.ExampleTest1@359f7cdf]" name="testA" class="testng_demo.ExampleTest1"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2023-03-07T21:18:08 EST" name="Example Test" finished-at="2023-03-07T21:18:08 EST" duration-ms="38">
-      <class name="testng_demo.ExampleTest1">
-        <test-method signature="testA()[pri:0, instance:testng_demo.ExampleTest1@359f7cdf]" started-at="2023-03-07T21:18:08 EST" name="testA" finished-at="2023-03-07T21:18:08 EST" duration-ms="7" status="PASS">
+    <test started-at="2023-03-11T13:49:44 EST" name="Orange HRM Test 1" finished-at="2023-03-11T13:50:00 EST" duration-ms="15980">
+      <class name="attributes.OrangeHRMTest1">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:attributes.OrangeHRMTest1@16293aa2]" started-at="2023-03-11T13:49:44 EST" name="setUp" finished-at="2023-03-11T13:49:47 EST" duration-ms="2982" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testA -->
-      </class> <!-- testng_demo.ExampleTest1 -->
-    </test> <!-- Example Test -->
-  </suite> <!-- ExampleSuite -->
+        </test-method> <!-- setUp -->
+        <test-method signature="testLandOnLoginPage()[pri:0, instance:attributes.OrangeHRMTest1@16293aa2]" started-at="2023-03-11T13:49:47 EST" name="testLandOnLoginPage" description="Verifying login button is displayed" finished-at="2023-03-11T13:49:47 EST" duration-ms="338" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLandOnLoginPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:attributes.OrangeHRMTest1@16293aa2]" started-at="2023-03-11T13:49:47 EST" name="tearDown" finished-at="2023-03-11T13:49:48 EST" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:attributes.OrangeHRMTest1@16293aa2]" started-at="2023-03-11T13:49:48 EST" name="setUp" finished-at="2023-03-11T13:49:50 EST" duration-ms="2530" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:0, instance:attributes.OrangeHRMTest1@16293aa2]" started-at="2023-03-11T13:49:50 EST" name="testLoginWithInvalidCredentials" description="Verify successful login and dashbord header text" finished-at="2023-03-11T13:49:51 EST" duration-ms="1264" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithInvalidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:attributes.OrangeHRMTest1@16293aa2]" started-at="2023-03-11T13:49:51 EST" name="tearDown" finished-at="2023-03-11T13:49:51 EST" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:attributes.OrangeHRMTest1@16293aa2]" started-at="2023-03-11T13:49:51 EST" name="setUp" finished-at="2023-03-11T13:49:54 EST" duration-ms="2471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:attributes.OrangeHRMTest1@16293aa2]" started-at="2023-03-11T13:49:54 EST" name="testLoginWithValidCredentials" description="Verify successful login and dashbord header text" data-provider="data" finished-at="2023-03-11T13:49:56 EST" duration-ms="1771" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithValidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:attributes.OrangeHRMTest1@16293aa2]" started-at="2023-03-11T13:49:56 EST" name="tearDown" finished-at="2023-03-11T13:49:56 EST" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:attributes.OrangeHRMTest1@16293aa2]" started-at="2023-03-11T13:49:56 EST" name="setUp" finished-at="2023-03-11T13:49:58 EST" duration-ms="2413" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:attributes.OrangeHRMTest1@16293aa2]" started-at="2023-03-11T13:49:58 EST" name="testLoginWithValidCredentials" description="Verify successful login and dashbord header text" data-provider="data" finished-at="2023-03-11T13:50:00 EST" duration-ms="1745" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[elmadmin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Elm1234!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithValidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:attributes.OrangeHRMTest1@16293aa2]" started-at="2023-03-11T13:50:00 EST" name="tearDown" finished-at="2023-03-11T13:50:00 EST" duration-ms="119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- attributes.OrangeHRMTest1 -->
+    </test> <!-- Orange HRM Test 1 -->
+  </suite> <!-- OrangeHRM Suite -->
 </testng-results>

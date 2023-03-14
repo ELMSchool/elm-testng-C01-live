@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testng_demo.LoginTest">
+      <class name="attributes.OrangeHRMTest1">
         <methods>
-          <include name="testLoginWithValidCredentials"/>
+          <include name="setUp"/>
+          <include name="testLoginWithInvalidCredentials"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- testng_demo.LoginTest -->
+      </class> <!-- attributes.OrangeHRMTest1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
