@@ -1,97 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-11T13:49:44 EST" name="OrangeHRM Suite" finished-at="2023-03-11T13:50:00 EST" duration-ms="15980">
+  <suite started-at="2023-03-14T21:14:22 EDT" name="Listener Suite" finished-at="2023-03-14T21:14:27 EDT" duration-ms="4284">
     <groups>
     </groups>
-    <test started-at="2023-03-11T13:49:44 EST" name="Orange HRM Test 1" finished-at="2023-03-11T13:50:00 EST" duration-ms="15980">
-      <class name="attributes.OrangeHRMTest1">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:attributes.OrangeHRMTest1@16293aa2]" started-at="2023-03-11T13:49:44 EST" name="setUp" finished-at="2023-03-11T13:49:47 EST" duration-ms="2982" status="PASS">
+    <test started-at="2023-03-14T21:14:22 EDT" name="Listener Test" finished-at="2023-03-14T21:14:27 EDT" duration-ms="4284">
+      <class name="testng_listeners.ListenerDemo">
+        <test-method signature="testValidLoginWithHardAssert()[pri:0, instance:testng_listeners.ListenerDemo@52e6fdee]" started-at="2023-03-14T21:14:22 EDT" name="testValidLoginWithHardAssert" finished-at="2023-03-14T21:14:26 EDT" duration-ms="3354" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [OrangeHR] but found [OrangeHRM]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [OrangeHR] but found [OrangeHRM]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at testng_listeners.ListenerDemo.testValidLoginWithHardAssert(ListenerDemo.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testLandOnLoginPage()[pri:0, instance:attributes.OrangeHRMTest1@16293aa2]" started-at="2023-03-11T13:49:47 EST" name="testLandOnLoginPage" description="Verifying login button is displayed" finished-at="2023-03-11T13:49:47 EST" duration-ms="338" status="PASS">
+        </test-method> <!-- testValidLoginWithHardAssert -->
+        <test-method signature="testValidLoginWithSoftAssert()[pri:0, instance:testng_listeners.ListenerDemo@52e6fdee]" started-at="2023-03-14T21:14:26 EDT" name="testValidLoginWithSoftAssert" finished-at="2023-03-14T21:14:27 EDT" duration-ms="890" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLandOnLoginPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:attributes.OrangeHRMTest1@16293aa2]" started-at="2023-03-11T13:49:47 EST" name="tearDown" finished-at="2023-03-11T13:49:48 EST" duration-ms="132" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:attributes.OrangeHRMTest1@16293aa2]" started-at="2023-03-11T13:49:48 EST" name="setUp" finished-at="2023-03-11T13:49:50 EST" duration-ms="2530" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testLoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:0, instance:attributes.OrangeHRMTest1@16293aa2]" started-at="2023-03-11T13:49:50 EST" name="testLoginWithInvalidCredentials" description="Verify successful login and dashbord header text" finished-at="2023-03-11T13:49:51 EST" duration-ms="1264" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[invalid]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[invalid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLoginWithInvalidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:attributes.OrangeHRMTest1@16293aa2]" started-at="2023-03-11T13:49:51 EST" name="tearDown" finished-at="2023-03-11T13:49:51 EST" duration-ms="79" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:attributes.OrangeHRMTest1@16293aa2]" started-at="2023-03-11T13:49:51 EST" name="setUp" finished-at="2023-03-11T13:49:54 EST" duration-ms="2471" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:attributes.OrangeHRMTest1@16293aa2]" started-at="2023-03-11T13:49:54 EST" name="testLoginWithValidCredentials" description="Verify successful login and dashbord header text" data-provider="data" finished-at="2023-03-11T13:49:56 EST" duration-ms="1771" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLoginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:attributes.OrangeHRMTest1@16293aa2]" started-at="2023-03-11T13:49:56 EST" name="tearDown" finished-at="2023-03-11T13:49:56 EST" duration-ms="94" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:attributes.OrangeHRMTest1@16293aa2]" started-at="2023-03-11T13:49:56 EST" name="setUp" finished-at="2023-03-11T13:49:58 EST" duration-ms="2413" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:attributes.OrangeHRMTest1@16293aa2]" started-at="2023-03-11T13:49:58 EST" name="testLoginWithValidCredentials" description="Verify successful login and dashbord header text" data-provider="data" finished-at="2023-03-11T13:50:00 EST" duration-ms="1745" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[elmadmin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Elm1234!]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLoginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:attributes.OrangeHRMTest1@16293aa2]" started-at="2023-03-11T13:50:00 EST" name="tearDown" finished-at="2023-03-11T13:50:00 EST" duration-ms="119" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- attributes.OrangeHRMTest1 -->
-    </test> <!-- Orange HRM Test 1 -->
-  </suite> <!-- OrangeHRM Suite -->
+        </test-method> <!-- testValidLoginWithSoftAssert -->
+      </class> <!-- testng_listeners.ListenerDemo -->
+    </test> <!-- Listener Test -->
+  </suite> <!-- Listener Suite -->
 </testng-results>

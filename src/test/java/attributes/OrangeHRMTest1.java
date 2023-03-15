@@ -19,7 +19,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import utils.Driver;
 
 public class OrangeHRMTest1 {
-	
+
 	WebDriver driver;
 	
 	@DataProvider
